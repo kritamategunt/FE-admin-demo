@@ -3,7 +3,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 First, run the development server:
-openssl rand -base64 32
+
+run openssl rand -base64 32
+
+then create .env.local
+
+NEXTAUTH_SECRET= {use key from openssl rand -base64 32}
+NEXTAUTH_URL={service domain}
+
 
 ```bash
 npm run dev
